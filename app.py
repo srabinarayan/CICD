@@ -6,9 +6,9 @@ from starlette.responses import RedirectResponse
 app = FastAPI()
 
 
-@app.get("/", tags=["authentication"])
-async def index():
-    return RedirectResponse(url="/docs")
+# @app.get("/", tags=["authentication"])
+# async def index():
+#     return RedirectResponse(url="/docs")
 
 @app.get("/")
 async def root():
